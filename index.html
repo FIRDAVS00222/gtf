@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Array yaratish
+let myArray = ["element1", "element2", "element3", "element4"];
+
+// Array uzunligini console va alertda chiqarish
+console.log("Array uzunligi: ", myArray.length);
+alert("Array uzunligi: " + myArray.length);
+
+// Confirm chiqarish
+let userChoice = confirm("Bir elementni olib tashlamoqchimisiz?");
+
+// Agar user "OK" bosgan bo'lsa, bir elementni olib tashlash
+if (userChoice) {
+    myArray.pop(); // Oxirgi elementni olib tashlash
+    console.log("Bir element olib tashlandi. Yangi array: ", myArray);
+    alert("Bir element olib tashlandi. Yangi array uzunligi: " + myArray.length);
+} else {
+    console.log("Array o'zgartirilmadi. Hozirgi holat: ", myArray);
+    alert("Array o'zgartirilmadi. Hozirgi uzunlik: " + myArray.length);
+}
+
+    </script>
+</body>
+</html>
